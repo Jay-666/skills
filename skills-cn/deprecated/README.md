@@ -1,8 +1,8 @@
-# Deprecated
+# 已弃用
 
-Skills I no longer use.
+不再使用的 Skill。
 
-- **[design-an-interface](./design-an-interface/SKILL.md)** — Generate multiple radically different interface designs for a module using parallel sub-agents.
-- **[qa](./qa/SKILL.md)** — Interactive QA session where user reports bugs conversationally and the agent files GitHub issues.
-- **[request-refactor-plan](./request-refactor-plan/SKILL.md)** — Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue.
-- **[ubiquitous-language](./ubiquitous-language/SKILL.md)** — Extract a DDD-style ubiquitous language glossary from the current conversation.
+- **[design-an-interface](./design-an-interface/SKILL.md)** — 通过并行子 Agent 为模块生成多个截然不同的接口设计。
+- **[qa](./qa/SKILL.md)** — 交互式 QA 会话：用户以对话方式报告 bug，Agent 创建 GitHub issue。
+- **[request-refactor-plan](./request-refactor-plan/SKILL.md)** — 通过访谈用户制定包含小型提交的详细重构计划，再将其创建为 GitHub issue。
+- **[ubiquitous-language](./ubiquitous-language/SKILL.md)** — 从当前对话中提取 DDD 风格的通用语言术语表。

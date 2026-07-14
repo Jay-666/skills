@@ -55,7 +55,7 @@
 
 ### 3. 将它们接在一起
 
-Create a single switcher component on the route:
+在该 route 上创建一个单独的切换组件：
 
 ```tsx
 // 伪代码：适配项目框架

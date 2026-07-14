@@ -1,31 +1,31 @@
 ---
 name: obsidian-vault
-description: Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.
+description: 在含有 wikilink 和索引笔记的 Obsidian vault 中搜索、创建和管理笔记。适用于用户希望在 Obsidian 中查找、创建或整理笔记时。
 ---
 
-# Obsidian Vault
+# Obsidian 知识库
 
-## Vault location
+## 知识库位置
 
 `/mnt/d/Obsidian Vault/AI Research/`
 
-Mostly flat at root level.
+根目录大多采用平铺结构。
 
-## Naming conventions
+## 命名约定
 
-- **Index notes**: aggregate related topics (e.g., `Ralph Wiggum Index.md`, `Skills Index.md`, `RAG Index.md`)
-- **Title case** for all note names
-- No folders for organization - use links and index notes instead
+- **索引笔记**：汇总相关主题（如 `Ralph Wiggum Index.md`、`Skills Index.md`、`RAG Index.md`）
+- 所有笔记名使用 **Title Case**
+- 不使用文件夹组织，改用链接和索引笔记
 
-## Linking
+## 链接
 
-- Use Obsidian `[[wikilinks]]` syntax: `[[Note Title]]`
-- Notes link to dependencies/related notes at the bottom
-- Index notes are just lists of `[[wikilinks]]`
+- 使用 Obsidian `[[wikilinks]]` 语法：`[[Note Title]]`
+- 笔记在底部链接依赖项/相关笔记
+- 索引笔记只是 `[[wikilinks]]` 的列表
 
-## Workflows
+## 工作流
 
-### Search for notes
+### 搜索笔记
 
 ```bash
 # Search by filename
@@ -35,24 +35,24 @@ find "/mnt/d/Obsidian Vault/AI Research/" -name "*.md" | grep -i "keyword"
 grep -rl "keyword" "/mnt/d/Obsidian Vault/AI Research/" --include="*.md"
 ```
 
-Or use Grep/Glob tools directly on the vault path.
+也可直接在知识库路径上使用 Grep/Glob 工具。
 
-### Create a new note
+### 创建新笔记
 
-1. Use **Title Case** for filename
-2. Write content as a unit of learning (per vault rules)
-3. Add `[[wikilinks]]` to related notes at the bottom
-4. If part of a numbered sequence, use the hierarchical numbering scheme
+1. 文件名使用 **Title Case**
+2. 按知识库规则，将内容写成一个学习单元
+3. 在底部向相关笔记添加 `[[wikilinks]]`
+4. 若属于编号序列，使用层级编号方案
 
-### Find related notes
+### 查找相关笔记
 
-Search for `[[Note Title]]` across the vault to find backlinks:
+在整个知识库中搜索 `[[Note Title]]` 以查找反向链接：
 
 ```bash
 grep -rl "\\[\\[Note Title\\]\\]" "/mnt/d/Obsidian Vault/AI Research/"
 ```
 
-### Find index notes
+### 查找索引笔记
 
 ```bash
 find "/mnt/d/Obsidian Vault/AI Research/" -name "*Index*"
