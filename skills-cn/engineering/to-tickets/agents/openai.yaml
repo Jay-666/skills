@@ -1,0 +1,5 @@
+interface:
+  display_name: "转为任务单"
+  short_description: "将计划拆分为垂直切片任务单"
+policy:
+  allow_implicit_invocation: false

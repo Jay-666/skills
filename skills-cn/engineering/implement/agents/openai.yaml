@@ -1,0 +1,5 @@
+interface:
+  display_name: "实现"
+  short_description: "依据规格说明或任务单实现工作"
+policy:
+  allow_implicit_invocation: false

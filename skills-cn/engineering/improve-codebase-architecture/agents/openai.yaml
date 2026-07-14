@@ -1,0 +1,5 @@
+interface:
+  display_name: "改进代码库架构"
+  short_description: "发现并深入审视架构改进项"
+policy:
+  allow_implicit_invocation: false

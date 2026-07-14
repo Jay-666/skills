@@ -1,0 +1,5 @@
+interface:
+  display_name: "循环访谈"
+  short_description: "定义希望构建的工作流规格"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,5 @@
+interface:
+  display_name: "路径规划"
+  short_description: "将大型工作映射为决策任务单"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,5 @@
+interface:
+  display_name: "问题分诊"
+  short_description: "让 issue 经过分诊角色流程"
+policy:
+  allow_implicit_invocation: false
